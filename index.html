@@ -19,11 +19,7 @@
       padding: 40px 20px;
     }
 
-    /* 첫 번째 이미지 + 겹치는 버튼 */
-    .image-wrapper {
-      position: relative; /* 겹치기 위해 부모를 relative로 */
-      margin-bottom: 20px; /* 두 번째 이미지와 간격 좁힘 */
-    }
+    /* 이미지 스타일 (모두 클릭 막기) */
     img {
       width: 100%;
       height: auto;
@@ -31,7 +27,10 @@
       border-radius: 8px;
       box-shadow: 0 4px 14px rgba(0,0,0,0.1);
       pointer-events: none; /* 이미지 클릭 막기 */
+      margin-bottom: 20px; /* 두 이미지 사이 간격 */
     }
+
+    /* 지도 버튼 겹치기 */
     .map-link-overlay {
       position: absolute;
       bottom: 10px; /* 이미지 아래쪽에서 약간 위로 */
@@ -46,6 +45,12 @@
       border-radius: 4px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       pointer-events: auto; /* 버튼만 클릭 가능 */
+    }
+
+    /* 첫 번째 이미지 래퍼 (버튼 겹치기 위해 relative) */
+    .image-wrapper {
+      position: relative;
+      margin-bottom: 20px;
     }
 
     /* 모바일 대응 */
@@ -80,10 +85,8 @@
       </a>
     </div>
 
-    <!-- 두 번째 초청장 이미지 (클릭 가능) -->
-    <a href="https://map.naver.com/p/entry/place/13403472" target="_blank">
-      <img src="invitation2.png" alt="ESR 초청장 2">
-    </a>
+    <!-- 두 번째 초청장 이미지 (클릭 막힘) -->
+    <img src="invitation2.png" alt="ESR 초청장 2">
   </div>
 </body>
 </html>
