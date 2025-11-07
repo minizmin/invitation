@@ -2,9 +2,9 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ESR 초청장</title>
 
-  <!-- 기본 스타일 -->
   <style>
     body {
       font-family: system-ui, -apple-system, "Noto Sans KR", sans-serif;
@@ -42,10 +42,12 @@
 </head>
 <body>
   <div class="container">
-    <!-- 초청장 이미지 -->
-    <img src="invitation.png" alt="ESR 초청장">
+    <!-- 이미지 클릭 시 지도 열리게 -->
+    <a href="https://map.naver.com/p/entry/place/13403471" target="_blank">
+      <img src="invitation.png" alt="ESR 초청장">
+    </a>
 
-    <!-- 네이버 지도 보기 버튼 -->
+    <!-- 버튼도 함께 표시 -->
     <a class="map-link"
        href="https://map.naver.com/p/entry/place/13403471"
        target="_blank">
