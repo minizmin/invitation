@@ -30,6 +30,7 @@
       display: block;
       border-radius: 8px;
       box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+      pointer-events: none; /* 이미지 클릭 막기 */
     }
     .map-link-overlay {
       position: absolute;
@@ -44,6 +45,7 @@
       text-decoration: underline;
       border-radius: 4px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      pointer-events: auto; /* 버튼만 클릭 가능 */
     }
 
     /* 모바일 대응 */
@@ -68,11 +70,9 @@
 </head>
 <body>
   <div class="container">
-    <!-- 첫 번째 초청장 이미지 + 지도 버튼 겹치기 -->
+    <!-- 첫 번째 초청장 이미지 (클릭 막힘) + 지도 버튼 -->
     <div class="image-wrapper">
-      <a href="https://map.naver.com/p/entry/place/13403471" target="_blank">
-        <img src="invitation.png" alt="ESR 초청장">
-      </a>
+      <img src="invitation.png" alt="ESR 초청장">
       <a class="map-link-overlay"
          href="https://naver.me/5LfX7Fun"
          target="_blank">
@@ -80,7 +80,7 @@
       </a>
     </div>
 
-    <!-- 두 번째 초청장 이미지 -->
+    <!-- 두 번째 초청장 이미지 (클릭 가능) -->
     <a href="https://map.naver.com/p/entry/place/13403472" target="_blank">
       <img src="invitation2.png" alt="ESR 초청장 2">
     </a>
