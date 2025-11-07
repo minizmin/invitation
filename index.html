@@ -18,9 +18,11 @@
       margin: 0 auto;
       padding: 40px 20px;
     }
+
+    /* 첫 번째 이미지 + 겹치는 버튼 */
     .image-wrapper {
       position: relative; /* 겹치기 위해 부모를 relative로 */
-      margin-bottom: 80px;
+      margin-bottom: 20px; /* 두 번째 이미지와 간격 좁힘 */
     }
     img {
       width: 100%;
@@ -43,6 +45,7 @@
       border-radius: 4px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
+
     /* 모바일 대응 */
     @media (max-width: 480px) {
       .container {
