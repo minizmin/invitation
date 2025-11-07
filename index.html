@@ -24,7 +24,7 @@
       display: block;
       border-radius: 8px;
       box-shadow: 0 4px 14px rgba(0,0,0,0.1);
-      margin-bottom: 80px; /* ⬅️ 초청장 아래 여백 더 크게 (기존 40 → 80) */
+      margin-bottom: 80px; /* 이미지 아래 여백 */
     }
     a.map-link {
       display: inline-block;
@@ -33,20 +33,36 @@
       color: #111;
       text-decoration: underline;
     }
+
+    /* 모바일 대응 */
+    @media (max-width: 480px) {
+      .container {
+        padding: 20px 10px;
+      }
+      a.map-link {
+        font-size: 16px;
+      }
+    }
   </style>
+
   <!-- 카카오톡 미리보기 (Open Graph) -->
-<meta property="og:title" content="ESR All-In-One Board 초청장" />
-<meta property="og:description" content="ESR 행사 초청장, 클릭해서 자세히 보기" />
-<meta property="og:image" content="https://minizmin.github.io/invitation/invite-preview.png" />
-<meta property="og:url" content="https://minizmin.github.io/invitation/" />
-<meta property="og:type" content="website" />
+  <meta property="og:title" content="ESR All-In-One Board 초청장" />
+  <meta property="og:description" content="ESR 행사 초청장, 클릭해서 자세히 보기" />
+  <meta property="og:image" content="https://minizmin.github.io/invitation/invite-preview.png" />
+  <meta property="og:url" content="https://minizmin.github.io/invitation/" />
+  <meta property="og:type" content="website" />
 
 </head>
 <body>
   <div class="container">
-    <!-- 초청장 이미지 -->
+    <!-- 첫 번째 초청장 이미지 -->
     <a href="https://map.naver.com/p/entry/place/13403471" target="_blank">
       <img src="invitation.png" alt="ESR 초청장">
+    </a>
+
+    <!-- 두 번째 초청장 이미지 -->
+    <a href="https://map.naver.com/p/entry/place/13403472" target="_blank">
+      <img src="invitation2.png" alt="ESR 초청장 2">
     </a>
 
     <!-- 네이버 지도 보기 -->
@@ -58,13 +74,3 @@
   </div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
